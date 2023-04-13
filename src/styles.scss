@@ -1,0 +1,82 @@
+$elem-margin: min(3rem, 4vw);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app {
+  display: block;
+  margin-bottom: 10vh;
+}
+
+.app:active {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: $elem-margin;
+  font-size: min(5rem, 6vw);
+  white-space: nowrap;
+}
+
+.app h1::before, h1::after {
+  content: '🔥';
+}
+
+button {
+  margin: $elem-margin auto;
+  padding: 1.2em 1em;
+  display: block;
+  font-size: min(2rem, 6vw);
+  line-height: 0;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: linear-gradient(0deg, hsl(35deg 100% 50%) 0%, hsl(18deg 98% 50%) 100%);
+  box-shadow: inset 0 2px 2px 0     hsl(0deg 0% 100% / 50%),
+                    0 10px 10px 0 hsl(0deg 0% 0% / 5%),
+                    0 5px 5px 0   hsl(0deg 0% 0% / 5%);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background: linear-gradient(0deg, hsl(28deg 100% 50%) 0%, hsl(13deg 98% 50%) 100%);
+}
+
+button:active{
+  background: linear-gradient(0deg, hsl(24deg 100% 50%) 0%, hsl(6deg 98% 50%) 100%);
+  box-shadow: inset 0 2px 5px 0 hsl(0deg 0% 0% / 20%);
+}
+
+@keyframes shake {
+  0%   { transform: translate(1px, 1px)   rotate(-1deg); }
+  10%  { transform: translate(-2px, -3px) rotate(0deg); }
+  20%  { transform: translate(-3px, 1px)  rotate(1deg); }
+  30%  { transform: translate(1px, 1px)   rotate(0deg); }
+  40%  { transform: translate(2px, -1px)  rotate(-1deg); }
+  50%  { transform: translate(-1px, 3px)  rotate(0deg); }
+  60%  { transform: translate(-2px, 1px)  rotate(1deg); }
+  70%  { transform: translate(3px, 3px)   rotate(-1deg); }
+  80%  { transform: translate(-2px, -1px) rotate(0deg); }
+  90%  { transform: translate(1px, 1px)   rotate(1deg); }
+  100% { transform: translate(2px, -2px)  rotate(-1deg); }
+}

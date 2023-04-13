@@ -1,0 +1,20 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*",
+    "./empty.ts"
+  ],
+  "exclude": [
+    "build",
+    "coverage",
+    "public",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

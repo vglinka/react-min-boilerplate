@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+    This is not HTML code, this is a template.
+    Set title in `webpack.config.js`. It has many options, read the docs:
+    https://www.npmjs.com/package/html-webpack-plugin -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Put your description here.">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+    Code like this won't work:
+      `<script src="../js/index.bundle.js"></script>`
+    Because this line will be generated and added automatically.
+    Settings in `webpack.config.js`:
+     `js/[name].[contenthash].bundle.js`
+    -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>

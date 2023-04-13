@@ -1,0 +1,17 @@
+# Ignore artifacts:
+webpack.prod.config.js
+webpack.dev.config.js
+webpack.config.js
+webpack.analyze.config.js
+babel.config.js
+package.json
+tsconfig.json
+coverage
+build
+node_modules
+package-lock.json
+.gitignore
+.prettierignore
+.eslintignore
+*.idea.md
+*.todo.md
