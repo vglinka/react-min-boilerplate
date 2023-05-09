@@ -15,6 +15,7 @@ A small `Hello World` project is in the `src` folder. You can see [Live Demo][li
 - Jest + React Testing Library (RTL) + user-event
 - ESLint airbnb config + Prettier `js` `jsx` `ts` `tsx`
 - Stylelint `css` `scss`
+- Styled Components
 - Webpack Bundle Analyzer
 
 ## Installation
