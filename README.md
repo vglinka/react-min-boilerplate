@@ -16,6 +16,7 @@ A small `Hello World` project is in the `src` folder. You can see [Live Demo][li
 - ESLint airbnb config + Prettier `js` `jsx` `ts` `tsx`
 - Stylelint `css` `scss`
 - Styled Components
+- React-icons
 - Webpack Bundle Analyzer
 
 ## Installation
