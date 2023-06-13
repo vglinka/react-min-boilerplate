@@ -14,7 +14,7 @@ A small `Hello World` project is in the `src` folder. You can see [Live Demo][li
 - Webpack & React + Redux Toolkit
 - Jest + React Testing Library (RTL) + user-event
 - ESLint airbnb config + Prettier `js` `jsx` `ts` `tsx`
-- Stylelint `css` `scss`
+- Stylelint `css` `scss` (`js` `jsx` `ts` `tsx` for Styled Components)
 - Styled Components
 - React-icons, normalize.css
 - Webpack Bundle Analyzer
@@ -49,6 +49,11 @@ npm run fix
 
 Prettier is included as an ESLint plugin.
 It will start automatically along with ESLint.
+You need to install the 
+[official eslint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and
+[official Stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+for VScode.
+
 
 **settings.json**
 ```json
@@ -57,6 +62,22 @@ It will start automatically along with ESLint.
 "editor.formatOnSave": true,
 "editor.formatOnPaste": true,
 "editor.formatOnType": true,
+// stylelint start
+"stylelint.validate": [
+  "css",
+  "scss",
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+],
+"editor.codeActionsOnSave": {
+  "source.fixAll.stylelint": true
+},
+"css.validate": false,
+"less.validate": false,
+"scss.validate": false,
+// stylelint end
 ```
 
 ## Contributing workflow

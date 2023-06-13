@@ -15,8 +15,8 @@
     "start":   "webpack serve     --progress --config ./webpack.dev.config.js",
     "build":   "webpack           --progress --config ./webpack.prod.config.js",
     "analyze": "webpack --analyze --progress --config ./webpack.analyze.config.js",
-    "lint":    "./node_modules/.bin/eslint       \"./src/**/*.{js,jsx,ts}\" && stylelint       \"./src/**/*.{css,scss}\"",
-    "fix":     "./node_modules/.bin/eslint --fix \"./src/**/*.{js,jsx,ts}\" && stylelint --fix \"./src/**/*.{css,scss}\""
+    "lint":    "./node_modules/.bin/eslint       \"./src/**/*.{js,jsx,ts,tsx}\"; stylelint       \"./src/**/*.{css,scss,js,jsx,ts,tsx}\"",
+    "fix":     "./node_modules/.bin/eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"; stylelint --fix \"./src/**/*.{css,scss,js,jsx,ts,tsx}\""
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -58,6 +58,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "mini-css-extract-plugin": "^2.7.5",
     "postcss": "^8.4.21",
+    "postcss-styled-syntax": "^0.4.0",
     "prettier": "2.8.7",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.1",

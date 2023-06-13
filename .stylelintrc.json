@@ -2,6 +2,7 @@
     "stylelint-config-standard",
     "stylelint-config-standard-scss"
   ],
+  "customSyntax": "postcss-styled-syntax",
   "plugins": [
     "stylelint-scss"
   ],
