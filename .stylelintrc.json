@@ -1,6 +1,5 @@
 { "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-standard-scss"
+    "stylelint-config-standard"
   ],
   "customSyntax": "postcss-styled-syntax",
   "plugins": [
@@ -9,7 +8,11 @@
   "overrides": [
     {
       "files": ["*.scss"],
-      "customSyntax": "postcss"
+      "customSyntax": "postcss",
+      "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss"
+      ]
     }
   ]
 }
