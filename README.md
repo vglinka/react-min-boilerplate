@@ -54,6 +54,7 @@ You need to install the
 [official Stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 for VScode.
 
+ESLint + Prettier:
 
 **settings.json**
 ```json
@@ -62,7 +63,12 @@ for VScode.
 "editor.formatOnSave": true,
 "editor.formatOnPaste": true,
 "editor.formatOnType": true,
-// stylelint start
+```
+
+Stylelint:
+
+**settings.json**
+```json
 "stylelint.validate": [
   "css",
   "scss",
@@ -77,7 +83,6 @@ for VScode.
 "css.validate": false,
 "less.validate": false,
 "scss.validate": false,
-// stylelint end
 ```
 
 ## Contributing workflow
