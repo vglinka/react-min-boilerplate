@@ -63,6 +63,17 @@ ESLint + Prettier:
 "editor.formatOnSave": true,
 "editor.formatOnPaste": true,
 "editor.formatOnType": true,
+"[typescriptreact]": {
+  "editor.defaultFormatter": "stylelint.vscode-stylelint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+},
+"files.watcherExclude": {
+  "**/.git/objects/**": true,
+  "**/.git/subtree-cache/**": true,
+  "**/node_modules/*/**": true
+},
 ```
 
 Stylelint:
